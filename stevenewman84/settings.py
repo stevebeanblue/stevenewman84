@@ -119,9 +119,9 @@ USE_TZ = True
 
 mimetypes.add_type("text/css", ".css", True)
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('static')
+    BASE_DIR.joinpath('static/')
 ]
 
 STATIC_ROOT = '/var/www/stevenewman84/static'
