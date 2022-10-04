@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get('SETCRET_KEY', 'some_random_default_string')
 DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = [
-    'stevenewman84.pythonanywhere.com'
+    'stevenewman84.pythonanywhere.com',
+    '127.0.0.1'
 ]
 
 # Application definition
