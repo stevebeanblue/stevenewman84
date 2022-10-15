@@ -4,6 +4,8 @@
     <head>
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/site.css' %}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
         <meta name="keywords" content="age of sigmar, warhammer, tabletop games, wargames, painting, website">
@@ -15,7 +17,7 @@
                 <div class="navbar">
                     <nav>
                       <div class="nav-wrapper white" id="navHeader">
-                        <a href="{% url 'home' %}"  class="brand-logo center flow-text black-text">Home</a>
+                        <a href="{% url 'home' %}"  class="brand-logo center flow-text black-text">SteveNewman84</a>
                       </div>
                     </nav>
               </div>
@@ -47,42 +49,5 @@
             $('.parallax').parallax();
           })
       </script>
-      <style>
-          body{
-              font-family: monospace !important;
-          }
-          nav{
-              box-shadow: none !important;
-              font-size: inherit !important;
-          }
-          @media screen and (max-width: 440px) {
-            #navHeader {
-                height:17em !important;
-            }
-            #checklistHeading{
-                padding-top: 10em !important;
-            }
-          }
-          .flex-container{
-            display: flex;
-            flex-wrap: wrap;
-          }
-          .justify{
-            text-align: justify;
-          }
-          body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-          }
-
-          main {
-            flex: 1 0 auto;
-          }
-
-          img {
-              max-width: 100%;
-          }
-      </style>
     </body>
 </html>

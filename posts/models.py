@@ -11,3 +11,13 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class WorkingWith(models.Model):
+    name = models.CharField(max_length=100)
+    description = tinymce_models.HTMLField()
+    image_link = models.CharField(max_length=250)
+    url = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.name

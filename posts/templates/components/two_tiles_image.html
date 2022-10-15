@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="row">
+    {% for company in working_with  %}
+        <div class="col s12 m4">
+            <div class="card pink white-text">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator two_tile_image" src="{% static  company.image_link  %}">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator white-text text-darken-4"><i class="material-icons right">more_vert</i>{{ company.name }}</span>
+                    <p class"white-text"><a href="{{ company.url }}">Visit</a></p>
+                </div>
+                <div class="card-reveal pink">
+                    <span class="card-title white-text text-darken-4">{{ company.name }}<i class="material-icons right">close</i></span>
+                    <p class="white-text">{{ company.description|safe }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+
+
+

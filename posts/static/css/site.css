@@ -1,0 +1,50 @@
+body{
+    font-family: monospace !important;
+}
+nav{
+  box-shadow: none !important;
+  font-size: inherit !important;
+}
+/*@media screen and (max-width: 440px) {*/
+/*#navHeader {*/
+/*    height:17em !important;*/
+/*}*/
+#checklistHeading{
+    padding-top: 10em !important;
+}
+
+.flex-container{
+display: flex;
+flex-wrap: wrap;
+}
+.justify{
+text-align: justify;
+}
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.thin-image {
+    max-height: 40%;
+}
+
+.two_tile_image {
+    max-height: 25em;
+}
+/*Make parallax work on mobile*/
+
+@media only screen and (max-width: 600px) {
+    .thin-image {
+        max-height: 150px;
+    }
+}
