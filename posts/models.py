@@ -23,3 +23,9 @@ class WorkingWith(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class TopSection(models.Model):
+    heading = models.CharField(max_length=100)
+    description = tinymce_models.HTMLField()
+
