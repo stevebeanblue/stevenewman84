@@ -18,6 +18,8 @@ class WorkingWith(models.Model):
     description = tinymce_models.HTMLField()
     image_link = models.CharField(max_length=250)
     url = models.CharField(max_length=250)
+    image_alt_text = models.CharField(max_length=100, default="image")
+    support = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
