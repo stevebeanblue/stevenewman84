@@ -45,11 +45,23 @@ img {
 
 @media only screen and (max-width: 600px) {
     .thin-image {
-        max-height: 150px;
+        max-height: 100px;
     }
 }
 
 .bold_a_tag {
     font-size: 20px;
     font-weight: 600;
+}
+
+.height {
+    min-height: 180px;
+}
+
+.indicator-item {
+    background-color: deeppink !important;
+}
+
+.indicator-item.active {
+    background-color: #0f9d58 !important;
 }

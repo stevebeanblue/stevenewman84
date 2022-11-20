@@ -1,13 +1,13 @@
 {% load static %}
 
-<div class="row">
+<div class="row carousel">
     {% for company in working_with  %}
-        <div class="col s12 m4">
-            <div class="card pink white-text">
+        <div class="col s12 m4 carousel-item">
+            <div class="card pink white-text ">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator two_tile_image responsive-img" src="{% static  company.image_link  %}" alt="{{ company.image_alt_text }}">
                 </div>
-                <div class="card-content">
+                <div class="card-content height">
                     <span class="card-title activator white-text text-darken-4"><i class="material-icons right">more_vert</i>{{ company.name }}</span>
                     <p><a class="white-text bold_a_tag" href="{{ company.url }}">Visit {{ company.name }}</a></p>
                 </div>
