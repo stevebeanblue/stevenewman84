@@ -1,8 +1,8 @@
 {% load static %}
 
-<div class="row carousel">
+<div class="row carousel _mobileCarousel">
     {% for company in working_with  %}
-        <div class="col s12 m4 carousel-item">
+        <div class="col s12 m4 _mobileCarouselItem carousel-item">
             <div class="card pink white-text ">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator two_tile_image responsive-img" src="{% static  company.image_link  %}" alt="{{ company.image_alt_text }}">

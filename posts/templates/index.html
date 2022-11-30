@@ -47,7 +47,7 @@
             {% include 'components/tiles_image_card.html' with working_with=support %}
         </div>
     </div>
-    {% include 'components/parallax_background.html' %}
+    {% comment %}{% include 'components/parallax_background.html' %}
     <div class="section white">
       <div class="row container">
         {% for post in posts %}
@@ -61,5 +61,5 @@
             </div>
         {% endfor %}
       </div>
-    </div>
+    </div>{% endcomment %}
 {% endblock %}

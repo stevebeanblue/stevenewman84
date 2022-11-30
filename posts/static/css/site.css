@@ -47,6 +47,9 @@ img {
     .thin-image {
         max-height: 100px;
     }
+    ._mobileCarousel {
+        height: 475px !important;
+    }
 }
 
 .bold_a_tag {
@@ -59,7 +62,7 @@ img {
 }
 
 .indicator-item {
-    background-color: deeppink !important;
+    background-color: black !important;
 }
 
 .indicator-item.active {
