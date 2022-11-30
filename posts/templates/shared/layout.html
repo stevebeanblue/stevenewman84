@@ -37,33 +37,31 @@
         <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
       <script src="{% static 'js/materialize.min.js' %}"></script>
         <script>
-          $(document).ready(function()
-          {
-            $('.parallax').parallax();
+          $(document).ready(function() {
+              $('.parallax').parallax();
 
-            if($(window).width() < 500){
-                makeMobile();
-            }
-            else {
-                makeDesktop();
-            }
+              if ($(window).width() < 500) {
+                  makeMobile();
+              } else {
+                  makeDesktop();
+              }
           });
 
-          $(window).resize(function ()
-          {
-            if ($(window).width() < 500) {
+          $(window).on( "orientationchange", function() {
+            if ($(window).width() < 500)
+            {
                 makeMobile();
             }
-            else {
+            else
+            {
                 makeDesktop();
             }
-            location.reload();
+            window.location.reload();
           });
 
           function makeDesktop(){
               $('._mobileCarousel').removeClass("carousel");
               $('._mobileCarouselItem').removeClass("carousel-item active");
-
           };
 
           function makeMobile(){
@@ -78,7 +76,7 @@
               if(!$('._mobileCarouselItem').hasClass("carousel-item")){
                 $('._mobileCarouselItem').addClass("carousel-item")
               }
-          }
+          };
       </script>
     </body>
 </html>
