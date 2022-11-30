@@ -42,20 +42,22 @@
             $('.parallax').parallax();
 
             if($(window).width() < 500){
-              makeMobile();
+                makeMobile();
             }
             else {
                 makeDesktop();
             }
           });
 
-          $(window).resize(function (){
+          $(window).resize(function ()
+          {
             if ($(window).width() < 500) {
                 makeMobile();
             }
             else {
                 makeDesktop();
             }
+            location.reload();
           });
 
           function makeDesktop(){
@@ -76,7 +78,6 @@
               if(!$('._mobileCarouselItem').hasClass("carousel-item")){
                 $('._mobileCarouselItem').addClass("carousel-item")
               }
-              
           }
       </script>
     </body>
