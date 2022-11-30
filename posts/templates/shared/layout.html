@@ -47,31 +47,24 @@
             else {
                 makeDesktop();
             }
-
           });
 
           $(window).resize(function (){
-            console.log('resize');
             if ($(window).width() < 500) {
-                console.log('less than 500')
                 makeMobile();
-                location.reload();
             }
             else {
-                console.log('more than 500')
                 makeDesktop();
-                location.reload();
             }
           });
 
           function makeDesktop(){
-              console.log('desktop ' + $(window).width());
               $('._mobileCarousel').removeClass("carousel");
               $('._mobileCarouselItem').removeClass("carousel-item active");
+              location.reload();
           };
 
           function makeMobile(){
-              console.log('mobile ' + $(window).width());
               $('.carousel').carousel({
                 fullWidth: true,
                 indicators: true
@@ -83,6 +76,7 @@
               if(!$('._mobileCarouselItem').hasClass("carousel-item")){
                 $('._mobileCarouselItem').addClass("carousel-item")
               }
+              location.reload();
           }
       </script>
     </body>
